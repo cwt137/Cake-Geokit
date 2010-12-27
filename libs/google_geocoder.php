@@ -7,26 +7,25 @@
 /**
  * Description of GoogleGeocoder
  *
- * @author cwthomas
  */
-class GoogleGeocoderComponent {
+class GoogleGeocoder extends Geocoder {
     private static function doGeocode($address, $options = array()) {
 
     }
 
-    public function doReverseGeocode($latLng) {
+    private function doReverseGeocode($latLng) {
 
     }
 
-    public function extractPlacemark($doc) {
+    private function extractPlacemark($doc) {
 
     }
 
-    public function constructBiasStringFromOptions($bias) {
+    private function constructBiasStringFromOptions($bias) {
 
     }
 
-    public function xml2GeoLoc($xml, $address = "") {
+    private function xml2GeoLoc($xml, $address = "") {
 
     }
 }

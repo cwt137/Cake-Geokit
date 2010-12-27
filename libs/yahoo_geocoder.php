@@ -1,19 +1,18 @@
 <?php
-/* 
+/*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /**
- * Description of UsGeocoder
+ * Description of YahooGeocoder
  *
- * @author cwthomas
  */
-class UsGeocoder extends Geocoder {
+class YahooGeocoder extends Geocoder {
 
     private static function doGeocode($address, $options = array()) {
-        
+
     }
-    //put your code here
+
 }
 ?>

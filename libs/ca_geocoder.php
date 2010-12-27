@@ -5,11 +5,10 @@
  */
 
 /**
- * Description of caGeocoder
- *
- * @author cwthomas
+ * Description of CaGeocoder
+ *s
  */
-class CaGeocoderComponent extends GeocoderComponent {
+class CaGeocoder extends Geocoder {
 
     /**
      * Template method which does the geocode lookup.

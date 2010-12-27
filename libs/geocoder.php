@@ -5,11 +5,10 @@
  */
 
 /**
- * Description of GeocoderComponent
+ * Description of Geocoder
  *
- * @author cwthomas
  */
-class GeocoderComponent extends Object {
+class Geocoder extends Geocoders {
 
     /**
      *

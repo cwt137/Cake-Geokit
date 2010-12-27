@@ -1,8 +1,8 @@
 <?php
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
+if(!class_exists('LatLng')) {
+    App::import('libs', 'geokit.lat_lng', FALSE);
+}
 
 /**
  * Description of GeoLoc
@@ -202,9 +202,11 @@ class GeoLoc extends LatLng {
         return $this->_streetAddress;
     }
 
-    public function setStreetAddress($_streetAddress) {
-        if(!empty($_streetAddress)) {
-            $this->_streetAddress = InflectorComponent::titleize($_streetAddress);
+    public function setStreetAddress($streetAddress) {
+        if(!empty($streetAddress)) {
+
+            //$this->_streetAddress = InflectorComponent::titleize($_streetAddress);
+            $a = new Inflector();
         }
     }
 

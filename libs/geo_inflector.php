@@ -4,18 +4,21 @@
  * and open the template in the editor.
  */
 
+App::import('Core', 'Inflector');
+
 /**
  * Description of Inflector
  *
  * @author cwthomas
  */
-class InflectorComponent {
+class GeoInflector {
 
     public static function titleize($word) {
 
     }
     
     public static function camelize($str) {
+        return Inflector::camelize($str);
 
     }
 
@@ -24,7 +27,7 @@ class InflectorComponent {
     }
 
     public static function snakeCase($s) {
-
+        return Inflector::slug($s);
     }
 
     public static function underscore($camelCasedWord) {
